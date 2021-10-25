@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@400;800&family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Monserrat';
+  
+}
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+a {
+  color: white;
+  text-decoration: underline;
+}
+p {
+  font-family: 'Montserrat';
+  font-size: 14px;
+}
+p.card-text {
+  margin-top: 40px;
+}
+.card-text:last-child {
+  margin-bottom: 29px;
+  margin-top: 65px;
+}
+.card-title {
+  margin-bottom: -2.5rem;
+}
+.card-body {
+  flex: 1 1 auto;
+  padding: 0rem 1rem;
+}
+.my-5 {
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  padding-left: 5px;
+}
+.btn-success {
+    background-color: #c4d94c;
+    color: black;
+    border: none;
+}
+.btn-success:hover {
+    color: #fff;
+    background-color: #b2cc1e;
+    border-color: #b2cc1e;    
+}
+nav.navbar.navbar-expand-lg.navbar {
+  position: fixed;
+  width: 100%;
+}
+nav.navbar.navbar-expand-lg a{
+    color: black;
+    display: inline-block;
+    padding-top: 0.32rem;
+    padding-bottom: 0.32rem;
+    margin-right: 1rem;
+    line-height: inherit;
+    white-space: nowrap;
+    font-family: 'Montserrat';
+}
+a.navbar-brand {
+  font-weight: bold;
+  color: #000;
+}
+p#foot {
+  color: white;
+}
+a#foot {
+  color: white;
+}
+
+li {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 25px;
+  margin-bottom: 0;
+  display: inline-block;
+}
+ul.navbar-nav.ms-auto.mb-2.mb-lg-0 {
+
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+div#navbarSupportedContent {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #212529;
+  text-align: left;
+}
+a.nav-link.btn.btn-success.nav-action-button {
+    margin-right: 15px;
+    background-color: #c4d94c;
+    border: none;
+}
+.nav{
+  z-index: 1;
+  padding-left: 2px;
+}
+
+.navbar-brand span {
+    color: #c4d94c;
+}
+
+span.hl-text {
+    background: rgb(196,217,76);
+    background: linear-gradient(0deg, rgba(196,217,76,1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 100%);
+}
+
+  body {
+    margin: 0;
+    font-family: 'Montserrat';
+}
+  h2.s {
+    color: #000000;
+  }
+  h2.j {
+    color: #c4d94c;
+  }
+
+.btn {
+  background-color:#c4d94c;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 6px 6px;
+  font-size: 16px;
+  cursor: pointer;
+  width:auto;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    color: rgb(0, 0, 0);
+  background-color:#dcf83c;
+}
+/* .....................................*/
+
+
+/* Full-width input fields,.................................... */
+input[type=text], input[type=password],input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #c4d94c;
+  color: rgb(0, 0, 0);
+  padding: 3px 6px;
+  margin: 4px -2px;
+  border: none;
+  border-radius: 6.1px;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.c1 {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background)========================================================= */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  z-index: 3;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+/*............................................................... */
+
+
+#team .card {
+  border: none;
+  background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.mainflip {
+  -webkit-transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -ms-transition: 1s;
+  -moz-transition: 1s;
+
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transition: 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.frontside {
+  position: relative;
+
+  z-index: 2;
+  margin-bottom: 30px;
+}
+
+.backside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+  -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+  box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transition: 1s;
+  -moz-transform-style: preserve-3d;
+  -o-transition: 1s;
+  -o-transform-style: preserve-3d;
+  -ms-transition: 1s;
+  -ms-transform-style: preserve-3d;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+  min-height: 312px;
+}
+
+.backside .card a {
+  font-size: 18px;
+  color: #000000 !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+  color: #000000 !important;
+}
+
+.frontside .card .card-body img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background: #000000;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.wrapper .sidebar ul li a{
+  color: #bdb8d7;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: #3e3d46;
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: #fff;
+}
+ 
+.wrapper .sidebar .social_media{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .social_media a{
+  display: block;
+  width: 40px;
+  background: #353536;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header{
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 20px;
+}
+
+@media (max-height: 500px){
+  .social_media{
+    display: none !important;
+  }
+}
+
+.sidenav {
+  position: sticky;
+  top: 100px;
+  background-color: rgb(49, 49, 49);
+  width: min-content;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+ z-index: 0; 
+  font-size: 15px;
+  color: #929292;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #ffffff;
+}
+
+.main {
+  font-size: 10px;
+  padding: 0px 10px;
+  margin-top: 100px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.dropbtn {
+  background-color: rgb(49, 49, 49);;
+  color: #929292;
+  padding: 16px;
+  font-size: 16px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border: none;
+  cursor: pointer;
+}
+form {
+  padding: 20px;
+
+
+}
+.dropbtn:hover, .dropbtn:focus {
+  color: #ffffff;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  right: -666px;
+  top: -457px;
+  background-color: rgb(49, 49, 49);
+  width: 520px;
+  overflow: hidden;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  z-index: 1;
+}
+.dropdown-content2 {
+  display: none;
+  color: white;
+  position: absolute;
+  right: -666px;
+  top: -365px;
+  background-color: rgb(49, 49, 49);
+  width: 520px;
+  overflow: hidden;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  z-index: 1;
+}
+.dropdown-content3 {
+  display: none;
+  color: white;
+  position: absolute;
+  right: -666px;
+  top: -280px;
+  background-color: rgb(49, 49, 49);
+  width: 520px;
+  overflow: hidden;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  z-index: 1;
+}
+.dropdown-content4 {
+  display: none;
+  color: white;
+  position: absolute;
+  right: -666px;
+  top: -189px;
+
+  background-color: rgb(49, 49, 49);
+  width: 520px;
+  overflow: hidden;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  z-index: 1;
+}
+.dropdown-content5 {
+  display: none;
+  color: white;
+  position: absolute;
+  right: -666px;
+  top: -106px;
+
+  background-color: rgb(49, 49, 49);
+  width: 520px;
+  overflow: hidden;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+nav.navbar.navbar-expand-lg.navbar {
+  background-color: white;
+  z-index: 1;
+}
+.content {
+padding: 16px;
+}
+
+.sticky {
+position: fixed;
+top: 0;
+z-index: 1;
+width: 100%;
+}
+
+.sticky + .content {
+padding-top: 60px;
+}

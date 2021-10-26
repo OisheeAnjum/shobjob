@@ -4,7 +4,7 @@
     padding: 0;
 }
 h1, h2, h3, h4, h5 {
-  font-family: 'Monserrat';
+  font-family: 'Nunito', sans-serif;
   
 }
 h2 {
@@ -26,6 +26,7 @@ p {
 }
 p.card-text {
   margin-top: 40px;
+  font-size: 13px;
 }
 .card-text:last-child {
   margin-bottom: 29px;
@@ -41,7 +42,6 @@ p.card-text {
 .my-5 {
   margin-top: 2rem !important;
   margin-bottom: 1rem !important;
-  padding-left: 5px;
 }
 .btn-success {
     background-color: #c4d94c;
@@ -54,7 +54,7 @@ p.card-text {
     border-color: #b2cc1e;    
 }
 nav.navbar.navbar-expand-lg.navbar {
-  position: fixed;
+
   width: 100%;
 }
 nav.navbar.navbar-expand-lg a{
@@ -65,16 +65,12 @@ nav.navbar.navbar-expand-lg a{
     margin-right: 1rem;
     line-height: inherit;
     white-space: nowrap;
-    font-family: 'Montserrat';
 }
 a.navbar-brand {
   font-weight: bold;
-  color: #000;
+  color: black;
 }
 p#foot {
-  color: white;
-}
-a#foot {
   color: white;
 }
 
@@ -92,7 +88,12 @@ ul.navbar-nav.ms-auto.mb-2.mb-lg-0 {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding-inline-start: 40px;
+
+  align-items: center;
+}
+button.navbar-toggler {
+  width: min-content;
+
 }
 div#navbarSupportedContent {
   font-size: 0.9rem;
@@ -120,10 +121,7 @@ span.hl-text {
     background: linear-gradient(0deg, rgba(196,217,76,1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 100%);
 }
 
-  body {
-    margin: 0;
-    font-family: 'Montserrat';
-}
+
   h2.s {
     color: #000000;
   }
@@ -136,7 +134,7 @@ span.hl-text {
   border: none;
   color: rgb(0, 0, 0);
   padding: 6px 6px;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
   width:auto;
 }
@@ -164,6 +162,7 @@ button {
   background-color: #c4d94c;
   color: rgb(0, 0, 0);
   padding: 3px 6px;
+  font-size: 14px;
   margin: 4px -2px;
   border: none;
   border-radius: 6.1px;
@@ -380,6 +379,7 @@ span.psw {
   background: #000000;
   padding: 30px 0px;
   position: fixed;
+  
 }
 
 .wrapper .sidebar h2{
@@ -519,8 +519,9 @@ form {
 .dropdown-content1 {
   display: none;
   position: absolute;
-  right: -666px;
-  top: -457px;
+  right: -642px;
+  top: -458px;
+  
   background-color: rgb(49, 49, 49);
   width: 520px;
   overflow: hidden;
@@ -531,8 +532,8 @@ form {
   display: none;
   color: white;
   position: absolute;
-  right: -666px;
-  top: -365px;
+  right: -642px;
+  top: -311px;
   background-color: rgb(49, 49, 49);
   width: 520px;
   overflow: hidden;
@@ -543,8 +544,8 @@ form {
   display: none;
   color: white;
   position: absolute;
-  right: -666px;
-  top: -280px;
+  right: -642px;
+  top: -231px;
   background-color: rgb(49, 49, 49);
   width: 520px;
   overflow: hidden;
@@ -555,9 +556,8 @@ form {
   display: none;
   color: white;
   position: absolute;
-  right: -666px;
-  top: -189px;
-
+  right: -642px;
+  top: -140px;
   background-color: rgb(49, 49, 49);
   width: 520px;
   overflow: hidden;
@@ -568,9 +568,20 @@ form {
   display: none;
   color: white;
   position: absolute;
-  right: -666px;
-  top: -106px;
-
+  right: -642px;
+  top: -75px;
+  background-color: rgb(49, 49, 49);
+  width: 520px;
+  overflow: hidden;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  z-index: 1;
+}
+.dropdown-content6 {
+  display: none;
+  color: white;
+  position: absolute;
+  right: -642px;
+  top: -75px;
   background-color: rgb(49, 49, 49);
   width: 520px;
   overflow: hidden;
@@ -596,7 +607,7 @@ padding: 16px;
 }
 
 .sticky {
-position: fixed;
+
 top: 0;
 z-index: 1;
 width: 100%;
@@ -604,4 +615,13 @@ width: 100%;
 
 .sticky + .content {
 padding-top: 60px;
+}
+ul.social-icon.list-inline {
+  margin-top: 17px;
+}
+ul#foot {
+  margin-left: 15px;
+}
+a#foot {
+  color: white;
 }

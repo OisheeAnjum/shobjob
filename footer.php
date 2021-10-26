@@ -56,10 +56,10 @@
             <div class="container px-0 py-4">
                 <div class = "row">
                   <ul id= "foot">
-                      <li><a href="#">terms &amp; conditions |</a></li> 
-                      <li><a href="#">site map |</a></li> |
-                      <li><a href="#">privacy policy |</a></li> |
-                      <li><a href="#">cookie policy </a></li>
+                      <li><a href="#">Terms &amp; Conditions </a></li>| 
+                      <li><a href="#">Site map</a></li> |
+                      <li><a href="#">Privacy Policy</a></li> |
+                      <li><a href="#">Cookie Policy </a></li>
                     </ul>
                 </div>
             </div>

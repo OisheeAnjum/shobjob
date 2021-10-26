@@ -1,15 +1,65 @@
 <?php  include("nav.php");?>
+
+<style>
+.tdropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.tdropbtn:hover, .tdropbtn:focus {
+  background-color: #2980B9;
+}
+
+.tdropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.tdropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.tdropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.tdropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+
+
+
+
+
 <div class="container">
+
+
   <div class="row px-5">
-      
     <div class="col-2">
       <div class="sidenav">
+      <div class="d-none d-lg-block">
+        
         <div class="nav">
          <button onclick="myFunction1()" class="dropbtn"><i class="fa fa-search"></i><br>Search</button>
          <button onclick="myFunction2()" class="dropbtn"><i class="fa fa-list-alt"></i><br>Category</button>
          <button onclick="myFunction3()" class="dropbtn"><i class="fa fa-building"></i><br>Organization</button>
          <button onclick="myFunction4()" class="dropbtn"><i class="fa fa-compass"></i><br>Location</button>
          <button onclick="myFunction5()" class="dropbtn"><i class="fa fa-filter"></i><br>other</button>
+        </div>
         </div>
         <div class="dropdown">
               
@@ -76,6 +126,7 @@
           </div>
         </div>
      </div>
+     
     </div>
 
      
@@ -173,6 +224,9 @@ function myFunction4() {
 function myFunction5() {
   document.getElementById("myDropdown5").classList.toggle("show");
 }
+function myFunction6() {
+  document.getElementById("myDropdown6").classList.toggle("show");
+}
 
 
 function filterFunction() {
@@ -207,6 +261,23 @@ function filterFunction() {
                               modal.style.display = "none";
                           }
                       }
+                      function mytFunction() {
+  document.getElementById("mytDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.tdropbtn')) {
+    var dropdowns = document.getElementsByClassName("tdropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 
 </script>
 

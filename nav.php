@@ -13,45 +13,18 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="css/main.css" rel="stylesheet" />
 
-        <style>
-
-nav.navbar.navbar-expand-lg.navbar {
-    background-color: white;
-}
-.content {
-  padding: 36px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-h3 {
-  margin-top: 20px;
-}
-</style>
 </head>
 <body>
 <div id="navbar">
-    <nav class="navbar navbar-expand-lg navbar">
+    <nav class="navbar navbar-expand-lg navbar  fixed-top sticky-nav" >
+
         <div class="container px-5">
             <a class="navbar-brand"  href="index.php">Shob<span>job</span></a>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
-            <span class="ti-menu">
-              
-            </span>
-          </button>
-
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span></button>
           
 
-            <div class="navbar-collapse collapse show" id="navbarNav" style="">
-
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
    
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link"style="color:#000000" href="index.php">Home</a></li>
@@ -141,6 +114,5 @@ h3 {
                         </form>
                       </div>
                       
-
 
 

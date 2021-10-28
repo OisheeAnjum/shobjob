@@ -4,7 +4,7 @@
  <div class="container">
  <div class="content">
     
-        <br><h2>Terms and condition here!</h2>
+        <br><br><h2>Terms and condition here!</h2>
         <p> I light the fuse
             And i watch it burn
             And somewhere deep inside i know there's a lesson to be learned

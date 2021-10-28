@@ -12,6 +12,7 @@
         <link href="css/bootstrap.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="css/main.css" rel="stylesheet" />
+        
 
 </head>
 <body>
@@ -28,12 +29,10 @@
    
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link"style="color:#000000" href="index.php">Home</a></li>
-                    <li class="nav-item"><a class="nav-link"style="color:#000000" href="alljobs.php">All Jobs</a></li>
+                    <li class="nav-item"><a class="nav-link"style="color:#000000" href="alljobss.php">All Jobs</a></li>
                     <li class="nav-item"><a class="nav-link"style="color:#000000" href="post.php">Post a Job</a></li>
                    
                     <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="fa fa-user"></i>Login</button>
-
-                    &nbsp&nbsp&nbsp&nbsp
                     <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><i class="fa fa-user-plus"></i>SignUp</button>
                     
                     

@@ -1,6 +1,65 @@
 <?php  include("nav.php");?>
 
+<br><br><br><br>
 
+<div id="myBtnContainer">
+
+  <button class="btn" onclick="filterSelection('search')"> <i class="fa fa-search"></i><br>Search</button>
+  <button class="btn" onclick="filterSelection('category')"><i class="fa fa-list-alt"></i><br>Category</button>
+  <button class="btn" onclick="filterSelection('organization')"><i class="fa fa-building"></i><br>Organization</button>
+  <button class="btn" onclick="filterSelection('location')"> <i class="fa fa-compass"></i><br>Location</button>
+</div>
+
+<div class="container">
+  <div class="filterDiv search">
+  <form>
+             <div class="row gs my-5">
+             <div class="col-lg-10">
+             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+         </div>
+         <div class="col-lg-2">
+                <input type="submit" class="form-control btn btn-success search-action-button">
+         </div>
+       </div>
+           </form> 
+  </div>
+
+  <div class="filterDiv category">
+  <form action="/action_page.php">
+             <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+             <label for="vehicle1">service</label><br>
+             <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+             <label for="vehicle2">corporate</label><br>
+             <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+             <label for="vehicle3">special skill</label><br><br>
+             <input type="submit" value="Submit">
+           </form>
+  </div>
+
+  <div class="filterDiv organization">
+  <form action="/action_page.php">
+              <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+              <label for="vehicle1"> Government</label><br>
+              <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+              <label for="vehicle2">NGO</label><br>
+              <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+              <label for="vehicle3">Multinational</label><br><br>
+              <input type="submit" value="Submit">
+            </form>
+  </div>
+  <div class="filterDiv location">
+  <form action="/action_page.php">
+              <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+              <label for="vehicle1"> Government</label><br>
+              <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+              <label for="vehicle2">NGO</label><br>
+              <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+              <label for="vehicle3">Multinational</label><br><br>
+              <input type="submit" value="Submit">
+            </form>
+  </div>
+
+</div>
 
 <div class="container">
 
@@ -231,6 +290,47 @@ window.onclick = function(event) {
     }
   }
 }
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
 
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
 </script>
 

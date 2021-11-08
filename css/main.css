@@ -166,7 +166,7 @@ button {
   border: none;
   border-radius: 6.1px;
   cursor: pointer;
-  width: 100%;
+
 }
 
 
@@ -587,6 +587,18 @@ form {
   box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
   z-index: 1;
 }
+.dropdown-content14 {
+  display: none;
+  color: white;
+  position: absolute;
+  right: -4711px;
+  top: -50px;
+  background-color: rgb(49, 49, 49);
+  width: 520px;
+  overflow: hidden;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  z-index: 10;
+}
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -644,92 +656,37 @@ a#foot {
   margin-top: 20px;
   overflow: hidden;
 }
+body {margin:0;}
 
-@media (min-width: 768px) {
-
-    /* show 3 items */
-    .carousel-inner .active,
-    .carousel-inner .active + .carousel-item,
-    .carousel-inner .active + .carousel-item + .carousel-item,
-    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
-        display: block;
-    }
-    
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
-        transition: none;
-    }
-    
-    .carousel-inner .carousel-item-next,
-    .carousel-inner .carousel-item-prev {
-      position: relative;
-      transform: translate3d(0, 0, 0);
-    }
-    
-    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: absolute;
-        top: 0;
-        right: -25%;
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-    
-    /* left or forward direction */
-    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
-    .carousel-item-next.carousel-item-left + .carousel-item,
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-    
-    /* farthest right hidden item must be abso position for animations */
-    .carousel-inner .carousel-item-prev.carousel-item-right {
-        position: absolute;
-        background-color: #212529;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-    
-    span.carousel-control-prev-icon {
-      background-color: black;
-      z-index: 0;
-  }
-  span.carousel-control-next-icon {
-    background-color: black;
-    z-index: 0;
-}
-    /* right or prev direction */
-    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
-    .carousel-item-prev.carousel-item-right + .carousel-item,
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(50%, 0, 0);
-        visibility: visible;
-        display: block;
-        visibility: visible;
-    }
-
+.icon-bar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
 }
 
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
 
- /* Bootstrap Lightbox using Modal */
+.icon-bar a:hover {
+  background-color: #000;
+}
 
-#profile-grid { overflow: auto; white-space: normal; } 
-#profile-grid .profile { padding-bottom: 40px; }
-#profile-grid .panel { padding: 0 }
-#profile-grid .panel-body { padding: 15px }
-#profile-grid .profile-name { font-weight: bold; }
-#profile-grid .thumbnail {margin-bottom:6px;}
-#profile-grid .panel-thumbnail { overflow: hidden; }
-#profile-grid .img-rounded { border-radius: 4px 4px 0 0;}
+.active {
+  background-color: #04AA6D;
+}
+button#s {
+  border-radius: 6.1 px;
+  margin: 0px;
+  background-color: rgb(49, 49, 49);
+  color: #929292;
+  font-size: 16px;
+  border: none;
+padding-inline: 20px;
+}

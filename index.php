@@ -18,10 +18,10 @@
                   </form>
 
             
-            </div>
+        </div>
             <div class="col-lg-6"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/work.gif" /></div>
            
-        </div>
+</div>
 
         <!---------------------------------------------------------------------------------------------->
        
@@ -202,14 +202,10 @@
     </h2>
     <div class="container">
     <div class="row gx-4 gx-lg-5" id="team">
-        <div class="col-md-12 mb-4">
-        </div>                
-        <!-- ./Team member -->
-        <!-- Team member -->
         <div class="col-xs-12 col-sm-6 col-md-3">
             <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                 <div class="mainflip">
-                    <div class="frontside">
+                    <div class="frontside" >
                         <div class="card">
                             <div class="card-body text-center">
                                 <p><img class=" img-fluid" src="assets/Filter.gif" alt="card image"></p>

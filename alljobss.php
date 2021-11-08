@@ -2,67 +2,20 @@
 
 <br><br><br><br>
 
-<div id="myBtnContainer">
 
-  <button class="btn" onclick="filterSelection('search')"> <i class="fa fa-search"></i><br>Search</button>
-  <button class="btn" onclick="filterSelection('category')"><i class="fa fa-list-alt"></i><br>Category</button>
-  <button class="btn" onclick="filterSelection('organization')"><i class="fa fa-building"></i><br>Organization</button>
-  <button class="btn" onclick="filterSelection('location')"> <i class="fa fa-compass"></i><br>Location</button>
-</div>
-
-<div class="container">
-  <div class="filterDiv search">
-  <form>
-             <div class="row gs my-5">
-             <div class="col-lg-10">
-             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-         </div>
-         <div class="col-lg-2">
-                <input type="submit" class="form-control btn btn-success search-action-button">
-         </div>
-       </div>
-           </form> 
-  </div>
-
-  <div class="filterDiv category">
-  <form action="/action_page.php">
-             <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-             <label for="vehicle1">service</label><br>
-             <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-             <label for="vehicle2">corporate</label><br>
-             <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-             <label for="vehicle3">special skill</label><br><br>
-             <input type="submit" value="Submit">
-           </form>
-  </div>
-
-  <div class="filterDiv organization">
-  <form action="/action_page.php">
-              <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-              <label for="vehicle1"> Government</label><br>
-              <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-              <label for="vehicle2">NGO</label><br>
-              <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-              <label for="vehicle3">Multinational</label><br><br>
-              <input type="submit" value="Submit">
-            </form>
-  </div>
-  <div class="filterDiv location">
-  <form action="/action_page.php">
-              <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-              <label for="vehicle1"> Government</label><br>
-              <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-              <label for="vehicle2">NGO</label><br>
-              <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-              <label for="vehicle3">Multinational</label><br><br>
-              <input type="submit" value="Submit">
-            </form>
-  </div>
-
-</div>
 
 <div class="container">
 
+<div class="icon-bar">
+  <div class="d-lg-none d-xl-none">
+         <button onclick="myFunction1()"id="s" class="dropbtn"><i class="fa fa-search"></i><br></button>
+         <button onclick="myFunction2()"id="s" class="dropbtn"><i class="fa fa-list-alt"></i><br></button>
+         <button onclick="myFunction3()"id="s" class="dropbtn"><i class="fa fa-building"></i><br></button>
+         <button onclick="myFunction4()"id="s" class="dropbtn"><i class="fa fa-compass"></i><br></button>
+         <button onclick="myFunction5()"id="s" class="dropbtn"><i class="fa fa-filter"></i><br></button>
+
+  </div>
+</div>
 
   <div class="row px-5">
     <div class="col-2">
@@ -70,11 +23,11 @@
       <div class="d-none d-lg-block">
         
         <div class="nav">
-         <button onclick="myFunction1()" class="dropbtn"><i class="fa fa-search"></i><br>Search</button>
-         <button onclick="myFunction2()" class="dropbtn"><i class="fa fa-list-alt"></i><br>Category</button>
-         <button onclick="myFunction3()" class="dropbtn"><i class="fa fa-building"></i><br>Organization</button>
-         <button onclick="myFunction4()" class="dropbtn"><i class="fa fa-compass"></i><br>Location</button>
-         <button onclick="myFunction5()" class="dropbtn"><i class="fa fa-filter"></i><br>other</button>
+         <button onclick="myFunction1()" id="s" class="dropbtn"><i class="fa fa-search"></i><br>Search</button>
+         <button onclick="myFunction2()" id="s" class="dropbtn"><i class="fa fa-list-alt"></i><br>Category</button>
+         <button onclick="myFunction3()" id="s" class="dropbtn"><i class="fa fa-building"></i><br>Organization</button>
+         <button onclick="myFunction4()" id="s"  class="dropbtn"><i class="fa fa-compass"></i><br>Location</button>
+         <button onclick="myFunction5()" id="s" class="dropbtn"><i class="fa fa-filter"></i><br>other</button>
         </div>
         </div>
         <div class="dropdown">
